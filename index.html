@@ -2,10 +2,13 @@
 layout: default
 title: SchedulePro
 ---
-<div class="blurb">
-    <h1>SchedulePro Development Blog</h1>
+<div class="page-header">
+    <div class="page-title">
+        <h3>SchedulePro Development Blog</h3>
+    </div>
+</div>
 
-    <ul class="posts">
+<ul class="posts">
     {% for post in site.posts %}
     <li>
         <span>{{ post.date | date_to_string }}</span> -
@@ -14,6 +17,4 @@ title: SchedulePro
         </a>
     </li>
     {% endfor %}
-    </ul>
-
-</div><!-- /.blurb -->
+</ul>

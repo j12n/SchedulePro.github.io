@@ -2,23 +2,36 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			
+			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+			<link rel="stylesheet" href="//app1.scheduleproweb.com/common/css/common.min.css?v=120" />
+
+			<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+			<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+			<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" />
+
+
+
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-              <li><a href="http://scheduleprosoftware.com">SchedulePro</a></li>
-	    		</ul>
+			<nav class="header navbar navbar-fixed-top" role="banner">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="/">
+						<span class="logo-schedulepro"></span>
+					</a>
+	    			<ul class="nav navbar-nav navbar-right">
+	        			<li><a href="/">Home</a></li>
+              			<li><a href="http://scheduleprosoftware.com">SchedulePro</a></li>
+	    			</ul>
+				</div>
 			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
+			<div id="container" class="fixed-header sidebar-closed">
+				<div class="container">
+					{{ content }}
+				</div><!-- /.container -->
+				<footer>
 
-			</footer>
+				</footer>
+			</div>
 		</body>
 	</html>
