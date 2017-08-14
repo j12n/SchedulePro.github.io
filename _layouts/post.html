@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
-<p class="meta">{{ page.author }}</p>
+<div class="page-header">
+    <div class="page-title">
+        <h3>{{ page.title }}</h3>
+        <span>{{ page.date | date_to_string }}{% if page.author != null %} by {{ page.author }}<% endif %}</span>
+    </div>
+</div>
 
 <div class="post">
   {{ content }}
