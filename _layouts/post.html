@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
+
 <div class="page-header">
     <div class="page-title">
         <h3>{{ page.title }}</h3>
-        <span>{{ page.date | date_to_string }}{% if page.author != null %} by {{ page.author }}<% endif %}</span>
+        <span>{{ page.date | date_to_string }}{% if page.author != null %} by {{ page.author }}{% endif %}</span>
     </div>
 </div>
 
 <div class="post">
-  {{ content }}
+    {{ content }}
 </div><!--.post -->
